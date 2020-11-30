@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react'
 import "./navbar.scss"
 
-
-
 const Navbar = () => {
     const [scrolled, setScrolled] = React.useState(false)
     const handleScroll = () => {
@@ -22,11 +20,9 @@ const Navbar = () => {
     if (scrolled) {
         x.push("scrolled")
     }
+    
     return (
         <header className = {x.join(" ")}>
-            <div>
-                <p>Joshua Elliot Thompson</p>
-            </div>
             <nav className="navigation">
                 <ul>
                     <li><a href="">About</a></li>
