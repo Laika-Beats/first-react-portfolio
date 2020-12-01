@@ -126,7 +126,7 @@ export default function Header() {
                 </p>
             </div>
             <div id="particleCanvas-Orange" class="e-particles-orange">
-              <Particles params= {{
+              <Particles params = {{
                   particles: {
                     number: {
                     value: 120,
