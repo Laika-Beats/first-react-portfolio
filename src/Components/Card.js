@@ -11,6 +11,8 @@ const StyledContainer = styled.div`
     max-height: 550px;
     width: 100%;
     margin: auto;
+    margin-bottom: 80px;
+    margin-top: 60px;
 `
 
 const Title = styled.h2`

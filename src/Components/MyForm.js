@@ -15,20 +15,21 @@ export default class MyForm extends React.Component {
     return (
       <div class="box-form flex-container">
         <div class="flex-item flex-item-1"></div>
-        <div class="flex-item flex-item-2">
-          <form
+        <div class="flex-item flex-item-2"
+          
           onSubmit={this.submitForm}
           action="https://formspree.io/f/xdoplbao"
           method="POST"
           >
-          <label>Email:</label><br></br>
-          <input type="email" name="email" /><br></br>
+          <h1 class="me">E-mail Me</h1>
+          <label>Your E-Mail:</label><br></br>
+          <input class="your-email" type="email" name="email" /><br></br>
           <label>Message:</label><br></br>
-          <input type="text" name="message" /><br></br>
+          <input class="message" type="text" name="message" /><br></br>
           {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
-          </form>
-        </div>
+          </div>
+        
       <div class="flex-item flex-item-3"></div>
       </div>
     );
