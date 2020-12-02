@@ -1,0 +1,36 @@
+
+
+.box-form {
+    margin: 1rem 20% 1rem 20%;
+    height: 40vh;
+    background-image: linear-gradient(45deg, #151D24, #ec533f23);
+    
+}
+
+.flex-container {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    text-align: justify;
+    border: solid 1px white;
+}
+
+.flex-item {
+    width: 200px;
+    margin: 2px;
+}
+
+.flex-item-1 {
+    min-height: 500px;
+    flex-grow: 1;
+}
+
+.flex-item-2 {
+    min-height: 500px;
+    flex-grow: 2;
+}
+
+.flex-item-3 {
+    min-height: 500px;
+    flex-grow: 1;
+}
