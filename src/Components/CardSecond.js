@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {FaRegEye, FaGithub} from 'react-icons/fa'
-import WeatherPic from '../Assets/WeatherDashboardScreenshot.png'
+import BlogPic from '../Assets/blog.png'
 
 const StyledContainer = styled.div`
     border: ${(props) => `1px solid #fff`};
@@ -85,7 +85,7 @@ const StyledRoot = styled.div`
 
 const StyledPhoto = styled.img`
     width: 100%;
-    height: 60%;
+    height: 380px;
     object-fit: cover;
     border: 1px solid #fff;
 `
@@ -93,14 +93,14 @@ const StyledPhoto = styled.img`
 const CardSecond = (props) => (
     <StyledRoot>
         <StyledContainer>
-            <StyledPhoto src={WeatherPic}/>
+            <StyledPhoto src={BlogPic}/>
             <Title>Full-Stack Travel Blog</Title>
-            <Code>Javascript | HTML | CSS | OpenWeather API</Code>
-            <Description>Uses the OpenWeather API allowing the user to type in any city in the world and view the weather of today and the the five following days. Utilizes local storage to save cities the user searched for so they can pull the forecast back up with the click of a button.
+            <Code>Javascript | HTML | CSS | MYSQL | Node.js | Passport</Code>
+            <Description>Allows users to register and sign-up and then post blog articles. Blog articles can be searched for by category type and users can edit/delete their own posts but not other users.
             </Description>
             <Actions>
-                <ActionButton onClick={(e) => {e.preventDefault(); window.location.href='https://laika-beats.github.io/Homework6/';}}> <FaRegEye/> View Project</ActionButton>
-                <ActionButton onClick={(e) => {e.preventDefault(); window.location.href='https://github.com/Laika-Beats/Homework6';}}> <FaGithub/> GitHub</ActionButton>
+                <ActionButton onClick={(e) => {e.preventDefault(); window.location.href='https://github.com/devonp702/couchSurfers';}}> <FaRegEye/> View Project</ActionButton>
+                <ActionButton onClick={(e) => {e.preventDefault(); window.location.href='https://dry-scrubland-38194.herokuapp.com';}}> <FaGithub/> GitHub</ActionButton>
             </Actions>
         </StyledContainer>
     </StyledRoot>

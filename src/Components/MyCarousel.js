@@ -2,6 +2,7 @@ import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Card from "./Card"
+import CardSecond from "./CardSecond"
 import './MyCarousel.scss'
 import styled from 'styled-components'
 
@@ -20,7 +21,7 @@ export default class MyCarousel extends React.Component {
       >
         <Slider>
           <Slide  index={0}><Card /></Slide>
-          <Slide  index={1}><Card /></Slide>
+          <Slide  index={1}><CardSecond /></Slide>
           <Slide  index={2}><Card /></Slide>
           <Slide  index={3}><Card /></Slide>
           <Slide  index={4}><Card /></Slide>
