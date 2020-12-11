@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Link, animateScroll as scroll } from "react-scroll"
 import "./navbar.scss"
 
 const Navbar = () => {
