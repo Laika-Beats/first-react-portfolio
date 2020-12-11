@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-scroll'
 import "./navbar.scss"
-import scrollToComponent from 'react-scroll-to-component';
+
 
 const Navbar = () => {
     const [scrolled, setScrolled] = React.useState(false)
