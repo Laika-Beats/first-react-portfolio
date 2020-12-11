@@ -1,19 +1,28 @@
 .content {
     box-sizing: border-box;
     min-height: 80vh;
+    margin-left: 200px;
+    margin-right: 200px;;
+    margin-bottom: 200px;
 }
 
 .box-2 {
+  
     height: 80vh;
     background-image: linear-gradient(45deg, #151D24, #ec533f23);
 }
 
 .flexbox-container {
+  
+  @media only screen  and (min-width : 700px) {
     display: flex;
     padding: 2px;
     align-items: center;
     text-align: justify;
     border: solid 1px white;
+    /* Styles */
+    }
+    
 }
 
 $redColor: rgba(244,67,54,1);

@@ -1,0 +1,20 @@
+.flexbox-container {
+    display: flex;
+    background-color: rgba(220, 20, 20, 0.171);
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 2px;
+    border: solid 1px black;
+}
+
+
+.flexbox-item-4 {
+    min-height: 200px;
+    flex-grow: 3;
+    background-color: rgba(220, 20, 20, 0.452);
+}

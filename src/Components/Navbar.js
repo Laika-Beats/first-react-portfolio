@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
-import { Link, animateScroll as scroll } from "react-scroll"
+import {Link} from 'react-scroll'
 import "./navbar.scss"
+import scrollToComponent from 'react-scroll-to-component';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = React.useState(false)
@@ -24,12 +25,13 @@ const Navbar = () => {
     
     return (
         <header className = {x.join(" ")}>
-            <nav className="navigation">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Socials</a></li>
-                    <li><a href="">Contact</a></li>
+            <nav className="navigation" id="navbar">
+                <ul className="nav-items">
+                        <li><Link activeClass="active" to="home" spy={true} smooth={true}> Home </Link></li>
+                        <li><Link  to="about" spy={true} smooth={true} offset={-190}> About </Link> </li>
+                        <li><Link  to="socials" spy={true} smooth={true} offset={-250}> Socials </Link> </li>
+                        <li><Link  to="myform" spy={true} smooth={true} offset={-450}> Contact </Link> </li>
+                        <li><Link  to="myCarousel" spy={true} smooth={true} offset={-50} > Projects </Link> </li>
                 </ul>
             </nav>
         </header>

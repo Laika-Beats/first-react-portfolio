@@ -90,7 +90,7 @@ const StyledPhoto = styled.img`
     border: 1px solid #fff;
 `
 
-const Card = (props) => (
+const CardFourth = (props) => (
     <StyledRoot>
         <StyledContainer>
             <StyledPhoto src={WeatherPic}/>
@@ -106,4 +106,4 @@ const Card = (props) => (
     </StyledRoot>
 )
 
-export default Card
+export default CardFourth

@@ -24,6 +24,8 @@ export default class MyForm extends React.Component {
           <h1 class="me">E-mail Me</h1>
           <label>Your E-Mail:</label><br></br>
           <input class="your-email" type="email" name="email" /><br></br>
+          <label>Your Name:</label><br></br>
+          <input class="your-email" type="text" name="name" /><br></br>
           <label>Message:</label><br></br>
           <input class="message" type="text" name="message" /><br></br>
           {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}

@@ -90,11 +90,11 @@ const StyledPhoto = styled.img`
     border: 1px solid #fff;
 `
 
-const Card = (props) => (
+const CardSecond = (props) => (
     <StyledRoot>
         <StyledContainer>
             <StyledPhoto src={WeatherPic}/>
-            <Title>Weather Dashboard</Title>
+            <Title>Full-Stack Travel Blog</Title>
             <Code>Javascript | HTML | CSS | OpenWeather API</Code>
             <Description>Uses the OpenWeather API allowing the user to type in any city in the world and view the weather of today and the the five following days. Utilizes local storage to save cities the user searched for so they can pull the forecast back up with the click of a button.
             </Description>
@@ -106,4 +106,4 @@ const Card = (props) => (
     </StyledRoot>
 )
 
-export default Card
+export default CardSecond
