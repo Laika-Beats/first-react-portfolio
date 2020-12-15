@@ -1,41 +1,66 @@
-import React, {useEffect} from 'react'
-import {Link} from 'react-scroll'
-import "./navbar.scss"
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./navbar.scss";
 
+function Navbar() {
+  const location = useLocation();
 
-const Navbar = () => {
-    const [scrolled, setScrolled] = React.useState(false)
-    const handleScroll = () => {
-        const offset = window.scrollY
-        if (offset > 200) {
-            setScrolled(true)
-        } else {
-            setScrolled(false)
-        }
-    }
-
-    useEffect( () => {
-        window.addEventListener("scroll", handleScroll)
-    })
-
-    let x = ["navbar"]
-    if (scrolled) {
-        x.push("scrolled")
-    }
-    
-    return (
-        <header className = {x.join(" ")}>
-            <nav className="navigation" id="navbar">
-                <ul className="nav-items">
-                        <li><Link activeClass="active" to="home" spy={true} smooth={true}> Home </Link></li>
-                        <li><Link  to="about" spy={true} smooth={true} offset={-190}> About </Link> </li>
-                        <li><Link  to="socials" spy={true} smooth={true} offset={-250}> Socials </Link> </li>
-                        <li><Link  to="myform" spy={true} smooth={true} offset={-450}> Contact </Link> </li>
-                        <li><Link  to="myCarousel" spy={true} smooth={true} offset={-50} > Projects </Link> </li>
-                </ul>
-            </nav>
-        </header>
-    )
+  return (
+    <header>
+      <nav className="navigation container" id="navbar">
+        <ul className="nav-items row">
+          <li className="col-sm-1 col-lg-3">
+            <Link
+              to="/"
+              className={
+                location.pathname === "/" ? "nav-link active" : "nav-link"
+              }
+            >
+              {" "}
+              Home{" "}
+            </Link>
+          </li>
+          <li className="col-sm-1 col-lg-3">
+            <Link
+              to="/about"
+              className={
+                location.pathname === "/about" ? "nav-link active" : "nav-link"
+              }
+            >
+              {" "}
+              About{" "}
+            </Link>{" "}
+          </li>
+          <li className="col-sm-1 col-lg-3">
+            <Link
+              to="/projects"
+              className={
+                location.pathname === "/projects"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              {" "}
+              Projects{" "}
+            </Link>{" "}
+          </li>
+          <li className="col-sm-1 col-lg-3">
+            <Link
+              to="/contact"
+              className={
+                location.pathname === "/contact"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              {" "}
+              Contact{" "}
+            </Link>{" "}
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
