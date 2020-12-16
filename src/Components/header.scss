@@ -98,8 +98,10 @@ body {
     width: 1285px;
     position: relative;
     z-index: 100;
+    padding: 0;
 
     h1 {
+      padding: 0;
       color: #ea5847;
       margin: 0;
       text-transform: uppercase;
