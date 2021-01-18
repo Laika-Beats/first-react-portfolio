@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
     padding: 15px 12px 18px;
     background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f23)`};
     max-width: 400px;
-    max-height: 570px;
+    min-height: 570px;
     width: 100%;
     margin: auto;
     @media (max-width: 600px) {

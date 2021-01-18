@@ -92,7 +92,7 @@ const StyledRoot = styled.div`
 
 const StyledPhoto = styled.img`
   width: 100%;
-  height: 370px;
+  height: 345px;
   object-fit: cover;
   border: 1px solid #fff;
 `;
@@ -101,7 +101,7 @@ const CardFourth = (props) => (
   <StyledRoot>
     <StyledContainer>
       <StyledPhoto src={ManagePic} />
-      <Title>MERN Secret Santa</Title>
+      <Title>Employee Management System</Title>
       <Code>Node.js | MYSQL | Inquirer |</Code>
       <Description>
         A command-line application using a database with table joins to
