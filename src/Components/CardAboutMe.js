@@ -6,7 +6,7 @@ import JoshuaPic from "../Assets/JoshuaMask.jpg";
 const StyledContainer = styled.div`
   border: ${(props) => `1px solid #fff`};
   padding: 15px 12px 18px;
-  background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f23)`};
+  background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f35)`};
   max-width: 400px;
   max-height: 1050px;
   width: 100%;
@@ -57,6 +57,7 @@ const Actions = styled.div`
     & button {
       width: 100%;
       margin-bottom: 4px;
+      margin-right: 100px;
       font-size: 0.5rem;
     }
   }
