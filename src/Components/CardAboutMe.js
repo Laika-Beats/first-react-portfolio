@@ -7,7 +7,7 @@ const StyledContainer = styled.div`
   border: ${(props) => `1px solid #fff`};
   padding: 15px 12px 18px;
   background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f35)`};
-  max-width: 400px;
+  max-width: 600px;
   max-height: 1050px;
   width: 100%;
   margin: auto;
@@ -46,7 +46,7 @@ const Actions = styled.div`
   color: #333;
   display: flex;
   align-items: center;
-  margin-left: 105px;
+  margin-left: 200px;
   margin-right: auto;
   svg {
     transform: translateY(2px);
@@ -57,7 +57,7 @@ const Actions = styled.div`
     & button {
       width: 100%;
       margin-bottom: 4px;
-      margin-right: 100px;
+      margin-right: 200px;
       font-size: 0.5rem;
     }
   }
@@ -108,6 +108,7 @@ const CardAboutMe = (props) => (
         on in order to become a creative developer and also allowed me to
         experience building projects with a team. I have fallen in love with
         coding and I am striving and practicing to progress my skills every day.
+        <br></br>
         <br></br>I have lived in Colorado all of my life-- I was born in the
         city of Aurora, raised in the suburb of Westminster, and currently
         living in the city of Lakewood. I play piano, guitar, and produce beats

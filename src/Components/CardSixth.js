@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { FaRegEye, FaGithub } from "react-icons/fa";
-import MusicPlayer from "../Assets/MusicPlayer.png";
+import ModernWebsite from "../Assets/ModernWebsite.png";
 
 const StyledContainer = styled.div`
     border: ${(props) => `1px solid #fff`};
     padding: 15px 12px 18px;
     background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f23)`};
     max-width: 400px;
-    min-height: 564px;
+    min-height: 550px;
     width: 100%;
     margin: auto;
     @media (max-width: 600px) {
@@ -92,20 +92,20 @@ const StyledRoot = styled.div`
 
 const StyledPhoto = styled.img`
   width: 100%;
-  height: 348px;
+  height: 345px;
   object-fit: cover;
   border: 1px solid #fff;
 `;
 
-const CardThird = (props) => (
+const CardSixth = (props) => (
   <StyledRoot>
     <StyledContainer>
-      <StyledPhoto src={MusicPlayer} />
-      <Title>React Music Player</Title>
-      <Code>React.js | HTML | CSS </Code>
+      <StyledPhoto src={ModernWebsite} />
+      <Title>Modern Animated Website</Title>
+      <Code>JavaScript| HTML | CSS |</Code>
       <Description>
-        A music player built in React allowing users to play, pause, rewind, and
-        skip through various tracks that are added to a dynamic library.
+        A boilerplate modern website with dynamic animations using GSAP and
+        ScrollMagic.
       </Description>
       <Actions>
         <ActionButton
@@ -132,4 +132,4 @@ const CardThird = (props) => (
   </StyledRoot>
 );
 
-export default CardThird;
+export default CardSixth;

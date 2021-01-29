@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
     padding: 15px 12px 18px;
     background: ${(props) => `linear-gradient(45deg, #151D24, #ec533f23)`};
     max-width: 400px;
-    min-height: 570px;
+    max-height: 570px;
     width: 100%;
     margin: auto;
     @media (max-width: 600px) {
@@ -70,7 +70,7 @@ const Actions = styled.div`
 
 const ActionButton = styled.button`
   min-width: 150px;
-  margin: -5px 5px;
+  margin: 1px 5px;
   padding: 8px 14px;
   background: rgba(155, 155, 155, 0.2);
   color: #fff;
